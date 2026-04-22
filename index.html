@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggy: Book 3</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #050005;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        /* Credits Button Styling */
+        .top-nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .btn-credits {
+            color: #bc8cf2;
+            text-decoration: none;
+            padding: 8px 20px;
+            border: 1px solid #4b0082;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-credits:hover {
+            background: #4b0082;
+            color: white;
+            box-shadow: 0 0 10px #ff00ff;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), #050005), 
+                        url('Screenshot_20260422-204938.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Official Logo Image Integration */
+        .official-logo {
+            max-width: 90%;
+            width: 700px;
+            height: auto;
+            filter: drop-shadow(0px 0px 15px rgba(255, 0, 255, 0.4));
+            margin-bottom: 10px;
+        }
+
+        /* Navigation - Fixed for Mobile */
+        nav {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 15px; 
+            width: 100%;
+            max-width: 600px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border: 1px solid #800080;
+            transition: all 0.3s ease;
+            background: rgba(128, 0, 128, 0.1);
+            font-weight: bold;
+            min-width: 140px; 
+            box-sizing: border-box;
+        }
+
+        nav a:hover {
+            background: #ff00ff;
+            color: #000;
+            box-shadow: 0 0 20px #ff00ff;
+            transform: translateY(-3px);
+        }
+
+        /* Content Section */
+        .main-content {
+            padding: 60px 10%;
+            background: linear-gradient(to bottom, #050005, #150015);
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: #ff00ff;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.85rem;
+            color: #4b0082;
+            background: #000;
+        }
+
+        /* Pulse Animation for Logo Glow */
+        .pulse {
+            animation: pulse-glow 3s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from { filter: drop-shadow(0px 0px 5px #4b0082); }
+            to { filter: drop-shadow(0px 0px 20px #ff00ff); }
+        }
+
+        /* Mobile Specific Adjustments */
+        @media (max-width: 600px) {
+            .top-nav {
+                width: 100%;
+                right: 0;
+                top: 10px;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                width: 80%;
+            }
+
+            .official-logo {
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="#" class="btn-credits">CREDITS</a>
+    </div>
+
+    <section class="hero-section">
+        <img src="Untitled649_20260322170138.png" alt="Piggy Book 3" class="official-logo pulse">
+        
+        <nav>
+            <a href="#">STORY</a>
+            <a href="#">SKINS</a>
+            <a href="#">CHAPTERS</a>
+            <a href="#">PLAY NOW</a>
+        </nav>
+    </section>
+
+    <div class="main-content">
+        <p>The start of what you thought has ended. Explore new chapters, uncover hidden secrets, and survive the <span class="highlight">resurgence of the insolence</span> in the next step of the Piggy universe.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Piggy: Book 3
+    </footer>
+
+</body>
+</html>
